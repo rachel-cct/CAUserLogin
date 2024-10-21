@@ -120,7 +120,6 @@ what the active View should be.
 Both Presenters also have a `prepareFailView` method to handle errors.
 
 #### Interactors
-
 Now compare `LoginInteractor` and `SignupInteractor` side by side. (You can drag
 tabs around if you like.)
 
