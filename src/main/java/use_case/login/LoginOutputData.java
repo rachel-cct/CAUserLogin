@@ -11,6 +11,7 @@ public class LoginOutputData {
     public LoginOutputData(String username, boolean useCaseFailed) {
         this.username = username;
         this.useCaseFailed = useCaseFailed;
+
     }
 
     public String getUsername() {
