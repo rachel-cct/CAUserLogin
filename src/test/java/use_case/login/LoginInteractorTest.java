@@ -41,6 +41,7 @@ public class LoginInteractorTest {
         interactor.execute(inputData);
     }
 
+    @Test
     public void successUserLoggedInTest() {
         LoginInputData inputData = new LoginInputData("Paul", "password");
         LoginUserDataAccessInterface userRepository = new InMemoryUserDataAccessObject();
@@ -64,7 +65,7 @@ public class LoginInteractorTest {
         };
 
         LoginInputBoundary interactor = new LoginInteractor(userRepository, successPresenter);
-        assertNull(userRepository.getCurrentUser());
+        assertEquals(null, userRepository.getCurrentUser());
         interactor.execute(inputData);
     }
 
